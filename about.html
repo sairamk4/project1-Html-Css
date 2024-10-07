@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple House</title>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+}
+
+.parallax {
+  background-image: url(img/simple-house-01.jpg); 
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  color: white;
+}
+.logo-section h1 {
+  margin-bottom: 5px;
+  font-size: 30px;
+  transform: translate(60px);
+}
+
+.logo-section p {
+  font-size: 16px;
+  transform: translate(60px);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-
+  margin-bottom: 10px;
+}
+.png{
+  position: absolute;
+  bottom: 0px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.about {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.about pre {
+    font-size: 1rem;
+    color: #666;
+    font-family: sans-serif;
+}
+.team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.team-member {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+    float: left;
+    display: flex;
+}
+
+.team-member img {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+}
+
+.team-member h3 {
+    margin-top: 5px;
+    font-size: 1.2rem:
+    margin-bottom: 30px;
+    color
+}
+.para2{
+    color: #217faa;
+}
+.team-member p {
+    margin: 5px 0;
+    margin-bottom: 20px;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: white;
+}
+
+.service-item {
+    flex: 1 1 30%;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.service-item .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.service-item h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.service-item p {
+    color: #666;
+}
+
+.service-item button {
+    margin-top: 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#blue{
+    background-color: #2D99CC;
+  color: white;
+}
+#blue:hover,
+#blue:focus{
+    background-color: #1b6f96;
+}
+#green{
+    background-color: #319966;
+  color: white;
+}
+#green:hover,
+#green:focus{
+    background-color: #1d6e46;
+}
+#red{
+    background-color: #993332;
+  color: white;
+}
+#red:hover,
+#red:focus{
+    background-color: #752423;
+}
+.history {
+    display: flex;
+    padding: 40px;
+    background-color: white;
+}
+
+.history img {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.history-content {
+    flex: 1;
+}
+
+.history-content h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.history-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: rgb(16, 13, 13);
+    margin-top: 20px;
+}
+.para{
+    gap: 20px;
+}
+.head{
+    margin-bottom: 20px;
+    color:  #00aeff;
+}
+@media screen and (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-member img {
+        margin: 0 auto 10px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service-item {
+        flex: 1 1 100%;
+    }
+
+    .history {
+        flex-direction: column;
+    }
+
+    .history img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="parallax">
+          <div class="header-content">
+            <div class="logo-section">
+                <div class="png"> <img src="./img/simple-house-logo.png"></div>
+              <div class="logo"></div>
+              <h1 class="main1">Simple House</h1>
+              <p class="main2">new restaurant template</p>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="./simplehouseproject.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>    
+    <section class="about">
+        <h2>About Simple House</h2>
+        <pre>This is about page of simple house template. You can modify and use this 
+          HTML template for your website. Total 3 HTML pages are included in this template. 
+          Header image has a parallax effect.</pre>
+    </section>
+ <section class="team">
+        <div class="team-member">
+            <img src="img/about-01.jpg" alt="Jennifer Soft">
+<figcaption class="picture">
+            <h3 class="head">Jennifer Soft</h3>
+            <p class="para2">Founder and CEO</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </figcaption>
+        <div class="team-member">
+            <img src="img/about-02.jpg" alt="Daisy Walker">
+            <figcaption class="picture">
+            <h3 class="head">Daisy Walker</h3>
+            <p class="para2">Executive Chef</p>
+            <p class="para">Vestibulum vitae lorem et dui placerat pharetra.</p>
+        </figcaption>
+        </div>
+        <div class="team-member">
+            <img src="img/about-03.jpg" alt="Florence Nelson">
+            <figcaption class="picture">
+            <h3 class="head">Florence Nelson</h3>
+            <p class="para2">Kitchen Manager</p>
+            <p class="para">Aliquam erat volutpat, sed faucibus odio ac erat blandit.</p>
+        </figcaption>
+        </div>
+        <div class="team-member">
+            <img src="img/about-04.jpg" alt="Valentina Martin">
+            <figcaption class="picture">
+            <h3 class="head">Valentina Martin</h3>
+            <p class="para2">Culinary Director</p>
+            <p class="pera">Praesent luctus, dolor sit amet fermentum tempor.</p>
+        </figcaption>
+        </div>
+    </section>
+    <section class="img1">
+        <img src="./img/about-05.jpg" height="70%" width="100%">
+    </section>
+ <section class="services">
+        <div class="service-item">
+            <i class="icon">🌶️</i>
+            <h4>Spicy Dishes</h4>
+            <p>Donec sed orci fermentum,convallis lacus id,tempus elit,sad eu neque accumsan,porttitor arcu a,interdum est.Donec in risus eu ante</p>
+            <button id="blue">Read More</button>
+        </div>
+        <div class="service-item">
+            <i class="icon">🌿</i>
+            <h4>Fresh Ingredients</h4>
+            <p>Maecenas pertium rutrum molestie.Duis dignissim egestas tuepis sit.Nam sed suscript odio.Morbi in dolor finbus,consequat eget.</p>
+            <button id="green">Read More</button>
+        </div>
+        <div class="service-item">
+            <i class="icon">🍸</i>
+            <h4>Fine Dining</h4>
+            <p>Morbi in dolor finibus,consequat nisl eget,pretium nunc.Maecenas pretium ruturm molestie.duis dignisiim egestas turpis sit.</p>
+            <button id="red">Read More</button>
+        </div>
+    </section>
+
+    <section class="history">
+        <img src="img/about-06.jpg" alt="Restaurant">
+        <div class="history-content">
+            <h4>History of our restaurant</h4>
+            <p>Sed ligula risus, interdum aliquet imperdiet sit amet, auctor sit amet justo. Maecenas posuere lorem id augue interdum vehicula.</p>
+            <p>Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to contact us for additional permissions about our templates. Thank you.</p>
+        </div>
+    </section>
+ <footer>
+        <p>&copy; 2020 Simple House | Design: TemplateMo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+}
+
+.parallax {
+  background-image: url(./img/simple-house-main.jpg); 
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  color: white;
+}
+.png{
+ position: absolute;
+ bottom: 0;
+}
+.logo-section h1 {
+  margin-bottom: 5px;
+  font-size: 30px;
+  transform: translate(60px);
+}
+
+.logo-section p {
+  font-size: 16px;
+  transform: translate(60px);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.welcome-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.welcome-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid green;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttons button:hover {
+  background-color: green;
+  color: white;
+}
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .welcome-section h2 {
+    font-size: 28px;
+  }
+
+  .welcome-section p {
+    font-size: 16px;
+  }
+}
+
+ .contact-page {
+    padding: 40px 20px;
+    text-align: center;
+    color: black;
+}
+.contact-page pre{
+    font-family: sans-serif;
+    text-align: center;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.contact-form,
+.contact-info {
+    width: 45%;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+button {
+    padding: 10px 20px;
+    background-color: #09C;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007BFF;
+}
+.map iframe {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.faq-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.faq-section p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.faq-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 20px;
+    /* cursor: pointer; */
+    transition: background-color 0.3s ease;
+}
+.faq-box:hover {
+    background-color: #97b6bb;
+}
+
+.faq-question {
+    font-size: 18px;
+    color: #09C;
+}
+
+.faq-box:hover .faq-question {
+    color: #006699;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+</style>
+<body>
+    <header>
+        <div class="parallax">
+          <div class="header-content">
+            <div class="logo-section">
+                <div class="png"> <img src="../img/simple-house-logo.png"></div>
+              <div class="logo"></div>
+              <h1>Simple House</h1>
+              <p>new restaurant template</p>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="./simplehouseproject.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+    <main>
+        <section class="contact-page">
+            <h2>Contact Page</h2>
+            <pre class="main">You may use <a href="#">Simple Contact Form</a> to send email to your inbox. Modify 
+and use this template for your website.Header image has a parallax effect.
+         Total 3 HTML pages include in this template</pre>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form action="submit_form.php" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Our Address</h3>
+                    <p>180 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus 10550</p>
+                    <p><strong>Phone:</strong> 080-090-0110</p>
+                    <p><strong>Email:</strong> info@company.co</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="../img/Facebook_Logo_2023.png" height="30px" alt="Facebook"></a>
+                        <a href="#"><img src="../img/x logo.png" height="30px" alt="Twitter"></a>
+                        <a href="#"><img src="../img/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text-thumbnail.png" height="30px" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_URL" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </section>
+        <section class="faq-section">
+            <h2>FAQs</h2>
+            <p>This section comes with Accordion tabs for different questions and answers about Simple House HTML CSS template. Thank you. #666</p>
+            
+            <div class="faq-box">
+                <div class="faq-question">1. Fusce eu lorem et dui #09C maximus varius?</div>
+            </div>
+            
+            <div class="faq-box">
+                <div class="faq-question">2. Vestibulum #999 ante ipsum primis in faucibus orci?</div>
+            </div>
+            
+            <div class="faq-box">
+                <div class="faq-question">3. Can I redistribute this template as a ZIP file?</div>
+            </div>
+            
+            <div class="faq-box">
+                <div class="faq-question">4. Ut ac erat sit amet neque efficitur faucibus et in lectus?</div>
+            </div>
+        </section>
+       
+    
+            <footer>
+                <p>Copyright © 2020 Simple House | Design: TemplateMo</p>
+            </footer>
+        </section>
+</body>
+</html>
